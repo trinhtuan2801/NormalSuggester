@@ -1,0 +1,40 @@
+﻿---------------
+mua cổ phiếu 1 0 0 2
+bán cổ phiếu 1 0 0 2
+giá chào mua 1 0 1 2
+giá chào bán 1 0 1 2
+thị trường bò 1 1 1 2
+thị trường gấu 1 1 1 2
+lệnh giới hạn 0 1 1 2
+lệnh thị trường 0 1 1 2
+lệnh gtc 0 1 2
+lệnh trong ngày 0 1 1 2
+mức biến động 0 1 1 2
+thanh khoản 1 1 2
+khối lượng giao dịch 1 1 1 1 2 
+đầu tư giá lên 1 1 1 1 2
+trung bình giá xuống 1 1 1 1 2
+vốn hóa 1 1 2
+cổ phiếu trôi nổi 0 0 1 1 2
+cổ phiếu được phép phát hành 0 0 0 0 1 1 2
+ipo 1 2
+chào bán thứ cấp 0 1 1 1 2
+cổ phiếu bluechip 0 0 1 2
+forex 1 2
+quỹ phòng hộ 0 1 1 2
+etf 1 2
+adr 1 2
+beta 1 2
+môi giới 1 1 2
+giao dịch trong ngày 1 1 1 1 2
+cổ tức 1 1 2
+sở giao dịch 1 1 1 2
+lệnh tức thời 0 1 1 2
+ký quỹ 1 1 2
+đường trung bình động 0 1 1 1 2
+danh mục đầu tư 1 1 0 0 2
+bảng giá 1 1 2
+phục hồi giá 1 1 0 2
+ngành 1 2
+mã cổ phiếu 1 0 0 2
+lợi suất đầu tư 1 1 0 0 2
