@@ -1,29 +1,24 @@
 package Baitap;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class NormalSuggester {
     private HashMap2D tags = new HashMap2D();
 
-    NormalSuggester(String link){
-
-        File file = new File(link);
+    NormalSuggester(){
         int index1 = -1, index2 = -1, j;
         String str = "", readstr;
         String[] s1 = new String[100];
         String[] s2 = new String[100];
 
         try {
-            BufferedReader in = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(file), "UTF8"));
+            InputStream is = NormalSuggester.class.getResourceAsStream("read1.txt");
+            BufferedReader in = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+
             readstr = in.readLine();
             while ((readstr = in.readLine()) != null) {
                 String[] bigstr = readstr.split(" ");
@@ -70,13 +65,13 @@ public class NormalSuggester {
         System.out.println("Câu gốc là: " + sentence);
         ArrayList<String> result = new ArrayList<String>();
         for (String key1 : tags.getOuter().keySet()) {
-            System.out.println(key1 + " " + tags.getOuter().get(key1));
+            //System.out.println(key1 + " " + tags.getOuter().get(key1));
             HashMap<String,Integer> inner = tags.getOuter().get(key1);
             boolean check = true;
             for (String key2 : inner.keySet()) {
-                System.out.println(key2);
+                ///System.out.println(key2);
                 if (inner.get(key2) == 1) check = sentence.contains(key2);
-                System.out.println(check);
+                //System.out.println(check);
                 if (check == false) break;
             }
             if (check == true) result.add(key1);
